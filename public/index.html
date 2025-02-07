@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoTrack - Sustainable Living Companion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>EcoTrack</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#dashboard">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to EcoTrack</h2>
+    <p>Track your carbon footprint and make sustainable choices!</p>
+    <button id="startButton">Get Started</button>
+  </section>
+
+  <section id="dashboard" style="display:none;">
+    <h2>Your Dashboard</h2>
+    <div id="carbonCalculator">
+      <h3>Carbon Footprint Calculator</h3>
+      <form id="carbonForm">
+        <label for="energyUsage">Energy Usage (kWh):</label>
+        <input type="number" id="energyUsage" required>
+        <button type="submit">Calculate</button>
+      </form>
+      <p id="carbonResult"></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 EcoTrack. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
